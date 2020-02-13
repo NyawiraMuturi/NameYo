@@ -1,7 +1,17 @@
+.container{
+  display: flex;
+}
 div {
   display:flex;
   flex-direction: column;
 }
 .left-box {
   background-image: url(../images/mountain.jpg);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  padding: 1rem;
+  transition: all .2s ease-in-out;
+  width: 100vw;
+
 }
