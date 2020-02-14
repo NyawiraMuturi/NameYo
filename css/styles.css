@@ -23,10 +23,10 @@ body {
   top: 0;
   width: 100%;
   height:100%;
-  background: url('https://wallpaperaccess.com/full/112097.jpg') no-repeat center;>
+  background: url('https://fotos.websitesvoortherapeuten.com/wp-content/uploads/2016/01/59-Zonsondergang-zee-mensen-strand-1920-Fotos-voor-Therapeuten-1560x878.jpg') no-repeat center;>
   background-size: cover;
   z-index: -1;
-  filter:blur(50px);
+  filter:blur(20px);
 }
 .akan-names{
   max-width: 850px;
@@ -35,12 +35,13 @@ body {
   justify-content: center;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  box-shadow: 0px 0px 22px 7px rgba(0,0,0,0.19);
 }
 .left-box{
   height: 100%;
-  background: url('https://wallpaperaccess.com/full/112097.jpg') no-repeat center;>
+  background: url('https://image.ceneostatic.pl/data/products/26731960/i-piekny-zachod-slonca-nad-spokojnym-morzem.jpg') no-repeat center;>
   background-size: cover;
+  opacity: .5;
 }
 .right-box{
   padding: 25px 40px;
@@ -59,7 +60,11 @@ h2:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #2ecc71;
+  background-color: #FACC7C;
+}
+h3{
+  font-family: 'Karma', serif;
+  padding-top: 300px;
 }
 .field{
   width: 100%;
@@ -85,7 +90,7 @@ h2:after {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  background-color: #2ecc71;
+  background-color: #FBC567;
   cursor: pointer;
   outline: none;
   border: none;
