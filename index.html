@@ -17,10 +17,10 @@
         <form>
           <input type="text" class="field" id="date-of-birth" placeholder="Birth date (dd/mm/year)">
           <input type="text" class="field" placeholder="Gender (click bellow)">
-          <input type="radio" name="gender"value="Female"/>Female
-          <input type="radio" name="gender"value="Male"/>Male
+          <input type="radio" id="female" name="gender"value="Female"/>Female
+          <input type="radio" id="male"name="gender"value="Male"/>Male
           <textarea class="field area" placeholder="Give us feedback"></textarea>
-          <button class="button"> Lets Go</button>
+          <button class="button" onclick="formdata()" type="submit"> Lets Go</button>
         </form>
       </div>
     </div>
