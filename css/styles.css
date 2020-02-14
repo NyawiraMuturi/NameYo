@@ -1,9 +1,10 @@
 .container{
-  display: flex;
-}
-div {
-  display:flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "header left-box"
+                        "right-box"
+  grid-template-rows: 100px 300px;
+  align-self: center;
 }
 .left-box {
   background-image: url(../images/mountain.jpg);
