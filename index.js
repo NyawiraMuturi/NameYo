@@ -1,24 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <div>
-        Enter your date of birth(month-day-year): <input type="text" id="date-of-birth">
-    </div>
-    <div>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-    </div>
-    <div>
-        <input type="submit" value="submit" onclick="formdata()">
-    </div>
+<console.log('Hello World!');
 
-    <div id="results"></div>
-    <script src="index.js"></script>
-</body>
-</html>
+function formdata() {
+
+  const maleNames = ['James', 'Jack', 'Mark', 'Alex', 'Donald'];
+  const femaleNames = ['Mary', 'Victoria', 'Jane', 'Esther', 'Faith'];
+
+  // get the date from html
+  const dateOfBirth = document.getElementById('date-of-birth').value;
+
+  const isMale = document.getElementById('male').checked;
+  const isFemale = document.getElementById('female').checked;
+
+  let name = '';
+
+  // convert it to a date object
+  const date = new Date(dateOfBirth);
+
+  // manipulate date object and get day here
+  const day = 'Monday';
+
+  // randomly select male name
+  if (isMale) {
+    name = maleNames[Math.floor(Math.random() * maleNames.length)]
+  }
+
+  // randomly select female name
+  if (isFemale) {
+    name = femaleNames[Math.floor(Math.random() * femaleNames.length)]
+  }
+
+  document.getElementById('results').innerHTML = `<p>  Your day of birth is <strong>${day}</strong><p>`+
+      `<p>I will call you <strong>${name}</strong><p>`;
+
+  console.log(date);
+}
