@@ -20,13 +20,13 @@
   } else {
     if (!isNAN(bdate.Value)) {
       if (bdate.value <=0 || bdate.value>31){
-        document.getElementById("bmonth").innerHTML = "Enter valid date";
+        document.getElementById("bdate").innerHTML = "Enter valid date";
         return false;
       } else{
-        document.getElementById('bmonth').innerHTML= 'proceed';
+        document.getElementById('bdate').innerHTML= 'proceed';
       }
     } else {
-      document.getElementById('bmonth').innerHTML = 'Enter a Number'
+      document.getElementById('bdate').innerHTML = 'Enter a Number'
       return false;
     }
   }
