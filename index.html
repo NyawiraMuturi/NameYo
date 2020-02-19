@@ -17,20 +17,20 @@
       <!--right-box-->
       <div class="right-box">
           <h2> Enter information here:</h2>
-        <form>
+        <form onsubmit="return aggregateMyFunctions()">
           <input type="text" class="field" id="bdate" placeholder="Date" value="">
           <input type="text" class="field" id="bmonth" placeholder="Month" value="">
           <input type="text" class="field" id="byear" placeholder="Year" value="">
           <input type="radio" id="female" name="gender"value="Female"/>Female
           <input type="radio" id="male"name="gender"value="Male"/>Male
           <textarea class="field area" placeholder="Give Us Feedback"></textarea>
-          <button class="button" onclick="formdata()" type="submit"> Lets Go</button>
+          <button class="button" type="submit"> Lets Go</button>
         </form>
       </div>
     </div>
   </div>
 
-    <script src="index.js"></script>
+    <script type="text/javascript"src="index.js"></script>
 
 </body>
 </html>
